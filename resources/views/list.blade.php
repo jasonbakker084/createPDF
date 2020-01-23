@@ -9,6 +9,9 @@
     <th>Course</th>
     <th>Begin time</th>
     <th>End Time</th>
+    <th>Download</th>
+    <th>Edit</th>
+    <th>Delete</th>
   </thead>
   <tbody>
     @foreach($pdfs as $pdf)
