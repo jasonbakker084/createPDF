@@ -14,6 +14,11 @@
                      <input type="text" class="form-control" name="name"/><br>
                      </div>
 
+                    <div class="form-group">
+                        <label>Datum:</label><br>
+                        <input type="date" class="form-control" name="date"/><br>
+                    </div>
+
                        <div class="form-group">
                      <label>Bedrijfsnaam:</label><br>
                      <input type="text" class="form-control" name="company"/><br>

@@ -19,6 +19,7 @@ class CreatePDFController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|max:255',
+            'date' => 'required|max:255',
             'company' => 'required|max:255',
             'course' => 'required|max:255',
         ]);
@@ -31,6 +32,7 @@ class CreatePDFController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|max:255',
+            'date' => 'required|max:255',
             'company' => 'required|max:255',
             'course' => 'required|max:255',
         ]);

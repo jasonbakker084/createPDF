@@ -27,6 +27,12 @@
                     <label for="name">Name:</label>
                     <input type="text" class="form-control" name="name" value="{{ $pdf->name }}"/>
                 </div>
+
+                <div class="form-group">
+                    <label for="price">Date:</label>
+                    <input type="date" class="form-control" name="date" value="{{ $pdf->date }}"/>
+                </div>
+
                 <div class="form-group">
                     <label for="price">Company:</label>
                     <input type="text" class="form-control" name="company" value="{{ $pdf->company }}"/>
