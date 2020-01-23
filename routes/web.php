@@ -17,6 +17,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::resource('createpdfs', 'CreatePDFController');
+
+//Route::post('createpdf', 'CreatePDFController@edit')->name('createpdf.edit');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('createpdf', 'CreatePDFController@create')->name('createpdf.create');
@@ -30,3 +34,7 @@ Route::get('/downloadPDF/{id}', 'CreatePDFController@downloadPDF');
 Route::get('pdf_form', 'PdfController@pdfForm');
 
 Route::get('pdf_download', 'PdfController@pdfDownload');
+
+Route::get('/dynamic_pdf', 'DynamicPDFController@index');
+
+Route::get('/dynamic_pdf/pdf', 'DynamicPDFController@pdf');

@@ -15,6 +15,14 @@
       <td>{{$pdf->company}}</td>
       <td>{{$pdf->course}}</td>
     <td><a href="{{action('CreatePDFController@downloadPDF', $pdf->id)}}">Download PDF</a></td>
+        <td><a href="{{ route('createpdfs.edit', $pdf->id)}}" class="btn btn-primary">Edit</a></td>
+        <td>
+            <form action="{{ route('createpdfs.destroy', $pdf->id)}}" method="post">
+                @csrf
+                @method('DELETE')
+                <button class="btn btn-danger" type="submit">Delete</button>
+            </form>
+        </td>
     </tr>
     @endforeach
   </tbody>

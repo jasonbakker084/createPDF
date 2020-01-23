@@ -16,12 +16,15 @@
       <tbody>
       <tr>
         <td>
-          {{$pdf->name}}
+{{--            {{ $pdf ?? '' }}--}}
+            {{$pdf->name}}
         </td>
         <td>
+{{--            {{ $pdf ?? '' }}--}}
           {{$pdf->company}}
         </td>
           <td>
+{{--              {{ $pdf ?? '' }}--}}
           {{$pdf->course}}
         </td>
       </tr>
