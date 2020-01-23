@@ -9,24 +9,33 @@
     <thead>
       <tr>
         <td><b>Name</b></td>
+          <td><b>Date</b></td>
         <td><b>Company</b></td>
           <td><b>Course</b></td>
+          <td><b>Begin Time</b></td>
+          <td><b>End Time</b></td>
       </tr>
       </thead>
       <tbody>
       <tr>
         <td>
-{{--            {{ $pdf ?? '' }}--}}
             {{$pdf->name}}
         </td>
+          <td>
+              {{$pdf->date}}
+          </td>
         <td>
-{{--            {{ $pdf ?? '' }}--}}
           {{$pdf->company}}
         </td>
           <td>
-{{--              {{ $pdf ?? '' }}--}}
           {{$pdf->course}}
         </td>
+          <td>
+              {{$pdf->beginTime}}
+          </td>
+          <td>
+              {{$pdf->endTime}}
+          </td>
       </tr>
       </tbody>
     </table>

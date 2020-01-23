@@ -29,6 +29,16 @@
                      <input type="text" class="form-control" name="course"/><br>
                     </div>
 
+                    <div class="form-group">
+                        <label>Begin tijd:</label><br>
+                        <input type="time" class="form-control" name="beginTime"/><br>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Eind tijd:</label><br>
+                        <input type="time" class="form-control" name="endTime"/><br>
+                    </div>
+
                     <br>
                      <button type="submit" class="btn btn-primary">Create PDF</button>
                 </form>

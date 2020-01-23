@@ -22,6 +22,8 @@ class CreatePDFController extends Controller
             'date' => 'required|max:255',
             'company' => 'required|max:255',
             'course' => 'required|max:255',
+            'beginTime' => 'nullable|max:255',
+            'endTime' => 'nullable|max:255',
         ]);
         Certificaat::create($validatedData);
 
@@ -35,6 +37,8 @@ class CreatePDFController extends Controller
             'date' => 'required|max:255',
             'company' => 'required|max:255',
             'course' => 'required|max:255',
+            'beginTime' => 'nullable|max:255',
+            'endTime' => 'nullable|max:255',
         ]);
         Certificaat::whereId($id)->update($validatedData);
 

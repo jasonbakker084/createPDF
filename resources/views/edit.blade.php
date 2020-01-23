@@ -41,6 +41,16 @@
                     <label for="quantity">Course:</label>
                     <input type="text" class="form-control" name="course" value="{{ $pdf->course }}"/>
                 </div>
+
+                <div class="form-group">
+                    <label for="price">Begin Time:</label>
+                    <input type="time" class="form-control" name="beginTime" value="{{ $pdf->beginTime }}"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="price">End Time:</label>
+                    <input type="time" class="form-control" name="endTime" value="{{ $pdf->endTime }}"/>
+                </div>
                 <button type="submit" class="btn btn-primary">Update Certificaat</button>
             </form>
         </div>
