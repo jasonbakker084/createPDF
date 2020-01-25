@@ -12,6 +12,7 @@
                      @csrf
                      <label>Naam:</label><br>
                      <input type="text" class="form-control" name="name"/><br>
+                     <input type="hidden" id="notification">
                      </div>
 
                     <div class="form-group">
@@ -41,47 +42,24 @@
 
                     <br>
                      <button type="submit" class="btn btn-primary">Create PDF</button>
-                </form>
+
                 <hr>
                 <br>
                 <br>
-                <form class="form-horizontal" action="" method="post" name="uploadCSV"
-                      enctype="multipart/form-data">
-                    <div class="input-row">
-                        <label class="col-md-4 control-label">Choose CSV File</label> <input
-                            type="file" name="file" id="file" accept=".csv">
-                        <button type="submit" id="submit" name="import"
-                                class="btn-submit btn btn-primary">Import</button>
-                        <br />
-                    </div>
-                    <div id="labelError"></div>
+                <div class="fileupload fileupload-new" data-provides="fileupload">
+    <span class="btn btn-primary btn-file"><span class="fileupload-new" tooltip="One with headers">Select a CSV file</span>
+    <span class="fileupload-exists">Change</span>         <input type="file" id="csv-file" /></span>
+                    <span class="fileupload-preview"></span>
+                    <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+                </div>
+                <table id="csv-table" class="table table-stripped table-bordered" data-toggle="table"></table>
+                <span id="upload" data-action="upload" class="btn btn-success">Upload</span>
+                <span id="export" data-action="export" class="btn btn-success">Export</span>
+                <span id="notification" class=""></span>
                 </form>
             </div>
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    $(document).ready(
-        function() {
-            $("#frmCSVImport").on(
-                "submit",
-                function() {
 
-                    $("#response").attr("class", "");
-                    $("#response").html("");
-                    var fileType = ".csv";
-                    var regex = new RegExp("([a-zA-Z0-9\s_\\.\-:])+("
-                        + fileType + ")$");
-                    if (!regex.test($("#file").val().toLowerCase())) {
-                        $("#response").addClass("error");
-                        $("#response").addClass("display-block");
-                        $("#response").html(
-                            "Invalid File. Upload : <b>" + fileType
-                            + "</b> Files.");
-                        return false;
-                    }
-                    return true;
-                });
-        });
-</script>
 @endsection
