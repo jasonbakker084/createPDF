@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::resource('createpdfs', 'CreatePDFController');
 
-//Route::post('createpdf', 'CreatePDFController@edit')->name('createpdf.edit');
+//Route::post('createpdfs', 'CreatePDFController@edit')->name('createpdf.edit');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -38,3 +38,9 @@ Route::get('pdf_download', 'PdfController@pdfDownload');
 Route::get('/dynamic_pdf', 'DynamicPDFController@index');
 
 Route::get('/dynamic_pdf/pdf', 'DynamicPDFController@pdf');
+
+Route::get('/import_csv', 'ImportController@getImport')->name('import');
+
+Route::post('/import_parse', 'ImportController@parseImport')->name('import_parse');
+
+Route::post('/import_process', 'ImportController@processImport')->name('import_process');

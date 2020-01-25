@@ -12,7 +12,7 @@
                      @csrf
                      <label>Naam:</label><br>
                      <input type="text" class="form-control" name="name"/><br>
-                     <input type="hidden" id="notification">
+{{--                     <input type="hidden" id="notification">--}}
                      </div>
 
                     <div class="form-group">
@@ -53,7 +53,7 @@
                     <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
                 </div>
                 <table id="csv-table" class="table table-stripped table-bordered" data-toggle="table"></table>
-                <span id="upload" data-action="upload" class="btn btn-success">Upload</span>
+                <span id="upload" data-action="submit" class="btn btn-success">Upload</span>
                 <span id="export" data-action="export" class="btn btn-success">Export</span>
                 <span id="notification" class=""></span>
                 </form>

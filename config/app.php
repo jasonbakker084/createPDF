@@ -230,4 +230,13 @@ return [
 
     ],
 
+    'db_fields' => [
+        'name',
+        'date',
+        'company',
+        'course',
+        'beginTime',
+        'endTime'
+    ]
+
 ];
