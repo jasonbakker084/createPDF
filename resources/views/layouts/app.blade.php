@@ -36,7 +36,9 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                                 <li class="nav-item"><a class="nav-link" href="{{ url('/createpdf') }}">Maak PDF</a></li><br>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('/import_csv') }}">Upload CSV file</a></li>
                           <li class="nav-item"><a class="nav-link" href="{{ url('/createpdf/list') }}">Certificaten</a></li>
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->

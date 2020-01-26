@@ -42,7 +42,7 @@ class CreatePDFController extends Controller
         ]);
         Certificaat::whereId($id)->update($validatedData);
 
-        return redirect('/createpdf')->with('success', 'Certificate is successfully updated');
+        return redirect('/createpdf/list')->with('success', 'Certificate is successfully updated');
     }
 
     public function index()
@@ -65,7 +65,7 @@ class CreatePDFController extends Controller
         $pdf = Certificaat::findOrFail($id);
         $pdf->delete();
 
-        return redirect('/createpdf')->with('success', 'Certificate is successfully deleted');
+        return redirect('/createpdf/list')->with('success', 'Certificate is successfully deleted');
     }
 
     public function downloadPDF($id)

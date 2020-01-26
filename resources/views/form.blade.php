@@ -46,16 +46,16 @@
                 <hr>
                 <br>
                 <br>
-                <div class="fileupload fileupload-new" data-provides="fileupload">
-    <span class="btn btn-primary btn-file"><span class="fileupload-new" tooltip="One with headers">Select a CSV file</span>
-    <span class="fileupload-exists">Change</span>         <input type="file" id="csv-file" /></span>
-                    <span class="fileupload-preview"></span>
-                    <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-                </div>
-                <table id="csv-table" class="table table-stripped table-bordered" data-toggle="table"></table>
-                <span id="upload" data-action="submit" class="btn btn-success">Upload</span>
-                <span id="export" data-action="export" class="btn btn-success">Export</span>
-                <span id="notification" class=""></span>
+{{--                <div class="fileupload fileupload-new" data-provides="fileupload">--}}
+{{--    <span class="btn btn-primary btn-file"><span class="fileupload-new" tooltip="One with headers">Select a CSV file</span>--}}
+{{--    <span class="fileupload-exists">Change</span>         <input type="file" id="csv-file" /></span>--}}
+{{--                    <span class="fileupload-preview"></span>--}}
+{{--                    <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>--}}
+{{--                </div>--}}
+{{--                <table id="csv-table" class="table table-stripped table-bordered" data-toggle="table"></table>--}}
+{{--                <span id="upload" data-action="submit" class="btn btn-success">Upload</span>--}}
+{{--                <span id="export" data-action="export" class="btn btn-success">Export</span>--}}
+{{--                <span id="notification" class=""></span>--}}
                 </form>
             </div>
         </div>
