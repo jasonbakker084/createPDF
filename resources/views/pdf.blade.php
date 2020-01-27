@@ -8,34 +8,34 @@
     <table class="table table-bordered">
     <thead>
       <tr>
-        <td><b>Name</b></td>
-          <td><b>Date</b></td>
-        <td><b>Company</b></td>
-          <td><b>Course</b></td>
-          <td><b>Begin Time</b></td>
-          <td><b>End Time</b></td>
+        <td><b>Name</b></td><br>
+          <td><b>Date</b></td><br>
+        <td><b>Company</b></td><br>
+          <td><b>Course</b></td><br>
+          <td><b>Begin Time</b></td><br>
+          <td><b>End Time</b></td><br>
       </tr>
       </thead>
       <tbody>
       <tr>
         <td>
             {{$pdf->name}}
-        </td>
+        </td><br>
           <td>
               {{$pdf->date}}
-          </td>
+          </td><br>
         <td>
           {{$pdf->company}}
-        </td>
+        </td><br>
           <td>
           {{$pdf->course}}
-        </td>
+        </td><br>
           <td>
               {{$pdf->beginTime}}
-          </td>
+          </td><br>
           <td>
               {{$pdf->endTime}}
-          </td>
+          </td><br>
       </tr>
       </tbody>
     </table>

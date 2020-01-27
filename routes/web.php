@@ -29,7 +29,7 @@ Route::post('createpdf', 'CreatePDFController@store')->name('createpdf.store');
 
 Route::get('createpdf/list', 'CreatePDFController@index')->name('createpdf.index');
 
-Route::get('/downloadPDF/{id}', 'CreatePDFController@downloadPDF');
+Route::get('/downloadPDF/{id}', 'CreatePDFController@downloadPDF')->name('downloadPDF./{id}');
 
 Route::get('pdf_form', 'PdfController@pdfForm');
 
