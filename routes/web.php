@@ -35,12 +35,12 @@ Route::get('pdf_form', 'PdfController@pdfForm');
 
 Route::get('pdf_download', 'PdfController@pdfDownload');
 
-Route::get('/dynamic_pdf', 'DynamicPDFController@index');
-
-Route::get('/dynamic_pdf/pdf', 'DynamicPDFController@pdf');
-
 Route::get('/import_csv', 'ImportController@getImport')->name('import');
 
 Route::post('/import_parse', 'ImportController@parseImport')->name('import_parse');
 
 Route::post('/import_process', 'ImportController@processImport')->name('import_process');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -19,6 +19,9 @@ class CreateCertificaatsTable extends Migration
             $table->string('name');
             $table->string('company');
             $table->string('course');
+            $table->string('date');
+            $table->string('beginTime');
+            $table->string('endTime');
         });
     }
 
