@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Certificaat;
-use PDF;
-use App\User;
+use Barryvdh\DomPDF\Facade as PDF;
 
 class CreatePDFController extends Controller
 {
